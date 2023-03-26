@@ -1,28 +1,69 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<style type="text/css">
-		 #firstanimation {
+		 .firstanimation {
 		background-image:url(https://img1.cgtrader.com/items/36849/76e46cbab5/large/green-thin-tree-3d-model-obj.jpg);
-		height: 500px;
-		width: 500px;
+		height: 1000px;
+		width: 450px;
 		animation-name: shrink;
 		animation-duration: 3s;
+		display: inline-block;
+		position: relative;
+		transition: 3s;
+		z-index: 10;
+		position: relative;
+		top: 0px;
+		display: inline-block;
+
+
+
+
 	}
+		#background{
+			z-index: -10;
+			position: absolute;
+			top: 0px;
+			height: 1707px; 
+			width: 2560px; 
+			object-fit: contain;
+			background-image:url(https://api.time.com/wp-content/uploads/2014/09/29a9799.jpg)
+			
 
+		}
 
-	@keyframes shrink {
-  	from {height: 500px;}
- 	 to {height: 40px;}
-	
+@keyframes shrink {
+  	from {height: 1000px;
+
+}
+ 	 to {height:0px;
+ 	  }
+*
 	
 
 	</style>
 </head>
 <body>
-	<div id=firstanimation></div>
+	<div class="firstanimation" id=first></div>
+	<div class="firstanimation" id=second></div>
+	<div class="firstanimation" id=third></div>
+	<div id=background></div>
+
+<script type="text/javascript">
+		
+		r.addEventListener("click", function(){
+			// firstanimation.style.animationName="shrink"
+			first.style.top="1000px";
+			second.style.top="1000px";
+			third.style.top="1000px";
+
+
+		})
+	</script>
 </body>
 </html>
+
