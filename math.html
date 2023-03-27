@@ -6,20 +6,25 @@
 	<title></title>
 
 <style type="text/css">
-	
+	#theAnswer{
+		font-size: 20pt;
+	}
+	#potentialNumber{
+		font-size: 20pt;
+	}
 	.maintext {
 
 		font-size: 25pt;
 	font-family: abrilfatface;
-	color: red;
-	height: 285px;
-	width: 1430px;
-	background-color: limegreen;
+	color: black;
+	height: 375px;
+	width: 1000px;
+	background-color: skyblue;
 	text-decoration: none;
 
 
 
-
+	
 	}
 
 
@@ -29,14 +34,28 @@
 </style>
 </head>
 <body>
+	<div class="maintext">
+Euler problem 1: <p>
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+</p>
+<p>
+Find the sum of all the multiples of 3 or 5 below 1000.
+
+the answer is...
+233168!! 
+</p>
+<p> you can find the answer for the sum of all the multiples of 3 or 5 below any number by typing it into the box and clicking click to compute.
+</p>
+</div>
+<input type="number" id="potentialNumber" onclick="clearAnswer()">
+<button onclick="euler1()" id="actionButton">click to compute</button>
+<div id="theAnswer"></div>
 <script type="text/javascript">
 	
 
-var  sum =0
-var  suma =0
-var diffc=0
 
-function add3(){
+
+/*function add3(){
 sum = sum+i;
 console.log(sum)
 
@@ -48,28 +67,36 @@ console.log(suma)
 function diff15(){
 diffc = diffc+i;
 console.log(diffc)
+}*/
+
+
+
+function euler1(){
+	/*if(potentialNumber.value==="undefined"){
+		alert("enter a valid number")
+	}
+	else{
+		console.log(potentialNumber.value)
+	}*/
+	var  sum3 =0
+	var  sum5 =0
+	var diff15=0
+	for(var i=0;i<potentialNumber.value; i=i+3)
+	{sum3=sum3+i}
+	for(var i=0;i<potentialNumber.value; i=i+5)
+	{sum5=sum5+i}
+	for(var i=0;i>-potentialNumber.value; i=i-15)
+	{diff15=diff15+i}
+	var answer=sum3+sum5+diff15
+	document.getElementById('theAnswer').innerHTML="Answer is " +answer
+
 }
+function clearAnswer(){
+	document.getElementById('theAnswer').innerHTML=""
 
-for(var i=0;i<1000; i=i+3)
-{add3()}
-for(var i=0;i<1000; i=i+5)
-{add5()}
-for(var i=0;i>-1000; i=i-15)
-{diff15()}
-
-
+}
 </script>
 
-<div class="maintext">
-Euchler problem 1: <p>
-If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-
-Find the sum of all the multiples of 3 or 5 below 1000.
-
-the answer is...
-233168!! to do it yourself, right click, click inspect on the menu, go to the console, and scroll down until you see zero. take the number right above that and add it with the number right above the next zero as well as the last negative number at the bottom of the console, and you will get the same answer!!
-
-</p>
 
 
 </body>

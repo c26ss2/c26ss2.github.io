@@ -14,19 +14,24 @@
 
 
 	}
+	#text{
+		font-size:35pt ;
+		color: black;
+		margin-bottom: 5px;
 
+	}
 	</style>
 </head>
 
 <body>
+<div id="text">Click repeatedly to see what happens!</div>
+
 <img src="heart.jpg" id="image">
 <audio id="song" src="Kirk Osamayo - Emotional Damage Epic Moment.mp3">
-	!-- Strategy 
-1.make an event listener on the document. 2. make a variable that counts clicks 3. if the click is odd then do one thing 4. if the click is even then do another thing.  -->
+	
 
-<div id="Campbell">
-Happy Valentines day
-</div>
+<div id="text">Click repeatedly to see what happens!</div>
+
 <script type="text/javascript">
 	let counter = 0
 	document.addEventListener("click",function(){counter=counter+1; console.log(counter)

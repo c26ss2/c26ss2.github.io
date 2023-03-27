@@ -10,7 +10,7 @@ body {
 		#buggy{
 			width:375px;
 			height:600px;
-			background-image:url(https://www.mediastorehouse.com/p/617/penguin-facing-right-head-pointing-slightly-9560325.jpg.webp);
+			background-image:url(https://i.insider.com/5e1f9792633b57141371bf86?width=600&format=jpeg&auto=webp);
 			left:10px;
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -26,7 +26,8 @@ body {
 <body>
 	
 
-
+	<div id="directions">
+		Click the arrow keys to see the penguin move in that direction. Also click the space bar for a surprise!
 	</div>
 	<div id="buggy"></div>
 
@@ -45,7 +46,7 @@ body {
   		else if (event.code === "ArrowRight"){
  		 	x = x+10;
 			buggy.style.left = x +"px";
-			buggy.style.backgroundImage = "url(''https://www.mediastorehouse.com/p/617/penguin-facing-right-head-pointing-slightly-9560325.jpg.webp'')"
+			buggy.style.backgroundImage = "url(https://www.mediastorehouse.com/p/617/penguin-facing-right-head-pointing-slightly-9560325.jpg.webp)"
 
 		  }
 		else if (event.code === "ArrowDown"){
