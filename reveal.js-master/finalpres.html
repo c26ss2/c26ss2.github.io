@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style type="text/css">
+			#one{
+   font-size: 90px;
+   font-family: 'Fraunces', serif;
+   position: relative;
+   top: 10px;
+   left: center;
+  }
+
+  #name{
+   font-size: 20px;
+   font-family: 'Fraunces', serif;
+   position: relative;
+   top: 0px;
+   left: center;
+  }
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="one" data-background-color="black"> my final project!
+     <div id="name"> by Simon Smith </div>
+    		</section>
+				<section data-auto-animate data-background-image="">These are the euler Projects. Originally, I coded them to just solve the problem from the Archive. But then, I amped it up...</section>
+				<section id="three" data-auto-animate data-background-color="black">
+    <div class="r-stack">
+      <img class="fragment" src="Coding.png" style= "width: 350px; height: 550px; position: relative; left: center; top: 5px;">
+      <img class="fragment" src="JasonDerulo.png" style= "width: 450px; height: 300px; position: relative; left: 425px; top: 100px;">
+      
+			</div>
+		</section>
+		<section>So why did i highlight this project...</section>
+		<section>Thanks!!!</section>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
